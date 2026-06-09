@@ -1,6 +1,7 @@
 import AnonymousSignin from "@/components/AnonymousSignin";
 import GithubSignin from "@/components/GithubSignin";
 import GoogleSignin from "@/components/GoogleSignin";
+import Link from "next/link";
 
 import { Varela_Round } from "next/font/google";
 
@@ -38,6 +39,14 @@ export default function AuthPage() {
           <GoogleSignin />
           <GithubSignin />
           <AnonymousSignin />
+        </div>
+        <div className="mt-4 text-center">
+          <Link
+            href="/policy"
+            className="text-sm text-purple-600 hover:underline"
+          >
+            View privacy policy
+          </Link>
         </div>
         <div>
           <p className="text-sm text-gray-600 mt-4">

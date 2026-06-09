@@ -18,16 +18,16 @@ export default function AnonymousSignin() {
   return (
     <button
       onClick={() => signIn()}
-      className="border-black border-2 rounded-lg mb-1.5 p-1 w-full text-black flex flex-row items-center cursor-pointer hover:bg-gray-600 dark:hover:bg-gray-700"
+      className="mx-auto block border-black border-2 rounded-lg mb-1.5 px-4 py-2 w-4/5 max-w-xs text-white bg-slate-100 flex items-center justify-center gap-2 cursor-pointer hover:bg-slate-200 dark:bg-slate-900 dark:hover:bg-slate-800"
     >
       <Image
         src="/pfp.jpg"
         width={30}
         height={30}
-        className="w-auto h-auto rounded-full mr-2"
-        alt="Google Icon"
+        className="w-auto h-auto rounded-full"
+        alt="Anonymous icon"
       />
-      Sign in Anonymously
+      Use without an account
     </button>
   );
 }
